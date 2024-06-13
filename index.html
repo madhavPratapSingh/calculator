@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>first web page </title>
+<head>
+
+<body>
+<hi>calculator</hi>
+<div id="ansBox"></div/>
+<input type="text">
+<button> Evaluate </button>
+<script>
+let ansBox=document.querySelector("#ansBox");
+let inpBox=document.querySelector("input");
+let btn=document.querySelector("button");
+
+btn.addEventlistener("click",evaluate);
+function evaluate(){
+let equation=inpBox.value;
+let answer=eval(equation);
+ansBox.innerHTML=answer;
+}
+</script>
+</body>
+</html>
